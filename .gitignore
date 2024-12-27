@@ -34,3 +34,5 @@
 #IDE Specific
 *.vscode
 *.cmake
+
+build/
