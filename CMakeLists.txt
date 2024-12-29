@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Define the executable
-add_executable(3DRenderer src/main.cpp src/renderer.cpp)
+add_executable(3DRenderer src/main.cpp src/renderer.cpp src/vector3.cpp)
 
 # Include SDL2 headers and link libraries
 include_directories(C:/msys64/mingw64/include/SDL2)
@@ -22,5 +22,5 @@ include_directories(include)
 
 # Add Windows-specific options
 if(WIN32)
-    target_link_options(3DRenderer PRIVATE -mwindows)
+    target_link_options(3DRenderer PRIVATE)
 endif()
