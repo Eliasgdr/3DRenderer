@@ -3,6 +3,7 @@
 
 #include <SDL.h>
 #include <string>
+#include <stdexcept>
 
 class Renderer {
 public:

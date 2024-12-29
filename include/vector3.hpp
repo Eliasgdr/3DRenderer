@@ -1,6 +1,9 @@
 #ifndef VECTOR3_HPP
 #define VECTOR3_HPP
 
+#include <iostream>
+#include <cmath>
+
 class Vec3 {
 public:
 	float x,y,z;

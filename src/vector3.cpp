@@ -1,9 +1,6 @@
 #ifndef VECTOR3_CPP
 #define VECTOR3_CPP
 
-#include <iostream>
-#include <cmath>
-
 #include "../include/vector3.hpp"
 	
 Vec3::Vec3() : x(0), y(0), z(0){} // Empty vector3 constructor

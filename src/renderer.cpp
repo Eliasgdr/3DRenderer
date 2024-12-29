@@ -2,7 +2,6 @@
 #define RENDERER_CPP
 
 #include "../include/renderer.hpp"
-#include <stdexcept>
 
 Renderer::Renderer(int width, int height, const std::string& title){ // Constructor definition
     // SDL Initialisation
