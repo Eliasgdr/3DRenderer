@@ -24,7 +24,7 @@ public:
 	Vec3 operator*(const Vec3& vec); // Multiplies the matrix by a vector
 	Matrix4 operator*(const Matrix4& other); // Multiplies the matrix by an other matrix
 
-	static Matrix4x4 perspective(float aspectRatio, float near, float far, float fov); // Creates a perspective matrix that converts 3D points into 2D points
+	static Matrix4 perspective(float aspectRatio, float near, float far, float fov); // Creates a perspective matrix that converts 3D points into 2D points
 
 	
 };

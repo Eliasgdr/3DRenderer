@@ -92,7 +92,7 @@ Matrix4 Matrix4::perspective(float aspectRatio, float near, float far, float fov
 	mat.m[2][3] = (2*far*near) / (near - far);
 	mat.m[3][2] = -1.0f;
 	mat.m[3][2] = 0.0f;
-	
+	return mat;
 }
 
 	
