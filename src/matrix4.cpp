@@ -84,6 +84,17 @@ Matrix4 Matrix4::operator*(const Matrix4& other){ // Multiplies the matrix by an
 	return mat;
 }
 
+Matrix4 Matrix4::perspective(float aspectRatio, float near, float far, float fov){ // Creates a perspective matrix that converts 3D points into 2D points
+	Matrix4 mat;
+	mat.m[0][0] = 1.0f / (aspectRatio*tan(fov/2.0f));
+	mat.m[1][1] = 1.0f / tan(fov/2.0f);
+	mat.m[2][2] = (far + near) / (near - far);
+	mat.m[2][3] = (2*far*near) / (near - far);
+	mat.m[3][2] = -1.0f;
+	mat.m[3][2] = 0.0f;
+	
+}
+
 	
 
 
