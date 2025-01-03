@@ -58,6 +58,8 @@ void testsMatrix4(){
     mat.print();
     mat = Matrix4::scaling(4.0f,5.0f,6.0f);
     mat.print();
+    mat = Matrix4::perspective(16.0f/9.0f, 0.1f, 1000.0f, M_PI/2.0f);
+    mat.print();
     mat.m[0][3] = 2.0f;
     mat.print();
     mat = mat*mat;
