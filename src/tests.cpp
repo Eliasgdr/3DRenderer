@@ -19,8 +19,8 @@ void testsRenderer(){
 
             renderer.clear();
             
-            renderer.drawLine(100, 100, 200, 200);
-            renderer.drawPoint(150, 150);
+            renderer.drawLine2D(100, 100, 200, 200);
+            renderer.drawPoint2D(150, 150);
 
             renderer.present();
         }
@@ -64,6 +64,11 @@ void testsMatrix4(){
     mat.print();
     mat = mat*mat;
     mat.print();
+}
+void testsMesh(){
+    Mesh cube;
+    cube = Mesh::cube(2.0f);
+    cube.print();
 }
 
 #endif // TEST_CPP

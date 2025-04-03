@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cmath>
+#include "matrix4.hpp"
 
 class Vec3 {
 public:
@@ -22,6 +23,7 @@ public:
 
 	float length(); // Length (or magnitude) of the vector
 	Vec3 normalize(); // Normalize the vector
+	Vec3 perspective(); //Translates the vector into a normalized 2d vector
 
 };
 

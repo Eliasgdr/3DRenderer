@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[]) {
     std::cout << "aaaaaaa" << std::endl;
-    testsMatrix4();
+    testsMesh();
 
     return 0;
 }

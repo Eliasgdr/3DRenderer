@@ -46,4 +46,9 @@ Vec3 Vec3::normalize(){ // Normalize the vector
 	return Vec3(x/magnitude, y/magnitude, z/magnitude);
 }
 
+Vec3 Vec3::perspective(){ //Translates the vector into a normalized 2d vector
+	Matrix4 mat = Matrix4::perspective;
+	
+}
+
 #endif // VECTOR3_CPP

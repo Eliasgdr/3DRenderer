@@ -38,12 +38,12 @@ void Renderer::present() {
     SDL_RenderPresent(sdlRenderer);
 }
 
-void Renderer::drawLine(int x1, int y1, int x2, int y2) {
+void Renderer::drawLine2D(int x1, int y1, int x2, int y2) {
     SDL_SetRenderDrawColor(sdlRenderer, 255, 255, 255, 255); // Couleur blanche
     SDL_RenderDrawLine(sdlRenderer, x1, y1, x2, y2);
 }
 
-void Renderer::drawPoint(int x, int y) {
+void Renderer::drawPoint2D(int x, int y) {
     SDL_SetRenderDrawColor(sdlRenderer, 255, 0, 0, 255); // Couleur rouge
     SDL_RenderDrawPoint(sdlRenderer, x, y);
 }
